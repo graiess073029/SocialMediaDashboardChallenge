@@ -1,0 +1,113 @@
+.root_inner{
+    padding: 40px 165px 70px 165px;
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.root_inner.dark{
+    background-color: hsl(230,17%,14%);
+}
+
+.allFollows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.overviews{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.overviews h1{
+    font-size: 1.6em;
+}
+
+.overviews .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dark .overviews h1{
+    color: hsl(0,100%,100%);
+}
+
+.dark .ap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 245px;
+    background-color: hsl(232, 19%, 15%);
+}
+
+.light .ap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 260px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+@media screen and (max-width : 1023px) {
+    .root_inner{
+        padding: 40px 25px 40px 25px;
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .root_inner.dark{
+        background-color: hsl(230,17%,14%);
+    }
+    
+    .allFollows{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .overviews{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .overviews h1{
+        font-size: 1.6em;
+    }
+    
+    .overviews .container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    
+}
+
+@media screen and (min-width : 1024px) and (max-width : 1419px) {
+    .root_inner{
+        overflow-y: hidden;
+        padding: 40px 80px 40px 80px;
+        min-height: calc(100vh - 80px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .overviews .container{
+        column-gap: 5%;
+        justify-content: space-between;
+    }
+}
